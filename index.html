@@ -17,10 +17,18 @@
         .paper-item {
             display: flex;
             margin-top: 10px;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        @media (max-width: 768px) {
+            .paper-item {
+                flex-direction: column;
+            }
         }
 
         .paper-item .paper-label {
-            width: 120px;
+            width: 150px;
             padding: 0;
             margin: 0;
             text-indent: 0
@@ -71,13 +79,15 @@
                 <div class="data-box">
                     <h2>Publications</h2>
                     <div class="paper-item">
-                        <p class="paper-label" style="text-indent: 0"><span class="label primary">ICML 2024</span></p>
-                        <p style="text-indent: 0;margin-left: 20px">Reward Shaping for Reinforcement Learning with An
-                            Assistant Reward Agent. <br>
+                        <p class="paper-label" style="text-indent: 0"><span class="label primary size-sm">ICML 2024</span></p>
+                        <p style="text-indent: 0;">Reward Shaping for Reinforcement Learning with An Assistant Reward Agent. <br>
                             <b>Haozhe Ma</b>, Kuankuan Sima, Thanh Vinh Vo, Di Fu, Tze-Yun Leong. <br>
                             41st International Conference on Machine Learning (ICML), 2024 <br>
-                            <a href="https://icml.cc/virtual/2024/poster/33703" target="_blank">
+                            <a href="https://openreview.net/forum?id=a3XFF0PGLU" target="_blank">
                                 <button type="button" class="btn size-sm primary-pale">Paper</button>
+                            </a>
+                            <a href="https://openreview.net/pdf?id=a3XFF0PGLU" target="_blank">
+                                <button type="button" class="btn size-sm primary-pale">PDF</button>
                             </a>
                             <a href="https://github.com/mahaozhe/ReLara" target="_blank">
                                 <button type="button" class="btn size-sm primary-pale">Codes</button>
@@ -86,13 +96,15 @@
                     </div>
 
                     <div class="paper-item">
-                        <p class="paper-label" style="text-indent: 0"><span class="label primary">AAMAS 2024</span></p>
-                        <p style="text-indent: 0;margin-left: 20px">Mixed-Initiative Bayesian Sub-Goal Optimization in
-                            Hierarchical Reinforcement Learning. <br>
+                        <p class="paper-label" style="text-indent: 0"><span class="label primary size-sm">AAMAS 2024</span></p>
+                        <p style="text-indent: 0;">Mixed-Initiative Bayesian Sub-Goal Optimization in Hierarchical Reinforcement Learning. <br>
                             <b>Haozhe Ma</b>, Thanh Vinh Vo, Tze-Yun Leong. <br>
                             23rd International Conference on Autonomous Agents and Multiagent Systems (AAMAS), 2024 <br>
                             <a href="https://dl.acm.org/doi/10.5555/3635637.3662991" target="_blank">
                                 <button type="button" class="btn size-sm primary-pale">Paper</button>
+                            </a>
+                            <a href="https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p1328.pdf" target="_blank">
+                                <button type="button" class="btn size-sm primary-pale">PDF</button>
                             </a>
                             <a href="" target="_blank">
                                 <button type="button" class="btn size-sm primary-pale">Poster</button>
@@ -104,34 +116,51 @@
                     </div>
 
                     <div class="paper-item">
-                        <p class="paper-label" style="text-indent: 0"><span class="label primary">CoLLAs 2024</span></p>
-                        <p style="text-indent: 0;margin-left: 20px">Decoupled Prompt-Adapter Tuning for Continual
-                            Activity Recognition <br>
+                        <p class="paper-label" style="text-indent: 0"><span class="label primary size-sm">CoLLAs 2024</span></p>
+                        <p style="text-indent: 0;">Decoupled Prompt-Adapter Tuning for Continual Activity Recognition <br>
                             Di Fu, Thanh Vinh Vo, <b>Haozhe Ma</b>, Tze-Yun Leong. <br>
                             Conference on Lifelong Learning Agents (CoLLAs), 2024 <br>
                         </p>
                     </div>
 
                     <div class="paper-item">
-                        <p class="paper-label" style="text-indent: 0"><span class="label primary">AAMAS 2023</span></p>
-                        <p style="text-indent: 0;margin-left: 20px">Hierarchical Reinforcement Learning with Human-AI
-                            Collaborative Sub-Goals Optimization. <br>
+                        <p class="paper-label" style="text-indent: 0"><span class="label primary size-sm">AAMAS 2023</span></p>
+                        <p style="text-indent: 0;">Hierarchical Reinforcement Learning with Human-AI Collaborative Sub-Goals Optimization. <br>
                             <b>Haozhe Ma</b>, Thanh Vinh Vo, Tze-Yun Leong. <br>
                             22rd International Conference on Autonomous Agents and Multiagent Systems (AAMAS), 2023 <br>
                             (extended abstract) <br>
                             <a href="https://dl.acm.org/doi/abs/10.5555/3545946.3598917" target="_blank">
                                 <button type="button" class="btn size-sm primary-pale">Paper</button>
                             </a>
-                            <a href="https://www.researchgate.net/publication/373512280_Hierarchical_Reinforcement_Learning_with_Human-AI_Collaborative_Sub-Goal_Optimization"
-                               target="_blank">
+                            <a href="https://openreview.net/pdf?id=59_waYW8fC" target="_blank">
+                                <button type="button" class="btn size-sm primary-pale">PDF</button>
+                            </a>
+                            <a href="https://www.researchgate.net/publication/373512280_Hierarchical_Reinforcement_Learning_with_Human-AI_Collaborative_Sub-Goal_Optimization" target="_blank">
                                 <button type="button" class="btn size-sm primary-pale">Poster</button>
                             </a>
                         </p>
                     </div>
 
                     <div class="paper-item">
-                        <p class="paper-label" style="text-indent: 0"><span class="label primary">Preprint</span></p>
-                        <p style="text-indent: 0;margin-left: 20px">GFANC-RL: Reinforcement Learning-based Generative
+                        <p class="paper-label" style="text-indent: 0"><span class="label primary size-sm">AAAI Sym. 2023</span></p>
+                        <p style="text-indent: 0;">Human-AI Collaborative Sub-Goal Optimization in Hierarchical Reinforcement Learning.<br>
+                            <b>Haozhe Ma</b>, Thanh Vinh Vo, Tze-Yun Leong. <br>
+                            Inaugural Summer Symposium Series 2023 of AAAI, 2023 <br>
+                            <a href="https://ojs.aaai.org/index.php/AAAI-SS/article/view/27481" target="_blank">
+                                <button type="button" class="btn size-sm primary-pale">Paper</button>
+                            </a>
+                            <a href="https://ojs.aaai.org/index.php/AAAI-SS/article/view/27481/27254" target="_blank">
+                                <button type="button" class="btn size-sm primary-pale">PDF</button>
+                            </a>
+                            <a href="https://www.researchgate.net/publication/380174381_Human-AI_Collaborative_Sub-Goal_Optimization_in_Hierarchical_Reinforcement_Learning_Motivation" target="_blank">
+                                <button type="button" class="btn size-sm primary-pale">Oral Slides</button>
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="paper-item">
+                        <p class="paper-label" style="text-indent: 0"><span class="label primary size-sm">Preprint</span></p>
+                        <p style="text-indent: 0;">GFANC-RL: Reinforcement Learning-based Generative
                             Fixed-filter Active Noise Control. <br>
                             Zhengding Luo*, <b>Haozhe Ma</b>*, Dongyuan Shi, Woon-Seng Gan. <br>
                             *Equal contribution. <br>
