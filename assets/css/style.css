@@ -305,7 +305,7 @@ body {
       margin-bottom: 10px; }
     .profile-container .data-box p {
       text-indent: 20px;
-      text-align: justify;
+      /* text-align: justify; */
       font-size: .9rem; }
     .profile-container .data-box .btn-link li {
       float: left;
